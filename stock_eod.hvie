@@ -1,0 +1,11 @@
+create external table stock_eod
+(
+  stockticker string,
+  transactiondate string,
+  openprice float,
+  highprice float,
+  lowerprice float,
+  closeprice float,
+  volume bigint
+  )ROW format delimited fields terminated by ","
+  location '/user/cloudera/nyse_demo/stock_eod';
